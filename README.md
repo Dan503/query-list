@@ -28,7 +28,7 @@ I was inspired to write this mixin after reading [this article](https://www.fila
 
 I ran into this issue myself on one of my projects. When I saw his half finished idea of what a good media query mixin could look like, I ran with it and fleshed it out a bit.
 
-[The article](https://www.filamentgroup.com/lab/element-query-workarounds.html) explains the problem that this mixin is trying to solve very well so I won't try to explain it again here.
+[The article](https://www.filamentgroup.com/lab/element-query-workarounds.html) explains the problem that this mixin is trying to solve very well so I won't try to explain it again here. Have a read of that article :)
 
 ## Installation
 
@@ -180,6 +180,8 @@ To create this css:
 }
 
 ``````
+
+If you are worrying about all the repetition of media queries in the output css, you can stop now. Gzipping makes the file size increase from repeated media queries [quite negligible](https://benfrain.com/inline-or-combined-media-queries-in-sass-fight/).
 
 ### Applying a default query
 
