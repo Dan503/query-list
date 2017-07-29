@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dan503/container-query-scss.git"
+    "url": "git+https://github.com/Dan503/query-list.git"
   },
   "keywords": [
     "container",
@@ -24,9 +24,9 @@
   "author": "Daniel Tonon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Dan503/container-query-scss/issues"
+    "url": "https://github.com/Dan503/query-list/issues"
   },
-  "homepage": "https://github.com/Dan503/container-query-scss#readme",
+  "homepage": "https://github.com/Dan503/query-list#readme",
   "dependencies": {
     "mq-scss": "^1.2.4"
   }
