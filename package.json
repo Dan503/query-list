@@ -1,0 +1,33 @@
+{
+  "name": "query-list",
+  "version": "1.0.0",
+  "description": "A Sass mixin powered by mq-scss that is a work around for the lack of container queries in css",
+  "main": "ql.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dan503/container-query-scss.git"
+  },
+  "keywords": [
+    "container",
+    "media",
+    "query",
+    "mixin",
+    "scss",
+    "sass",
+    "css",
+    "responsive",
+    "breakpoints"
+  ],
+  "author": "Daniel Tonon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dan503/container-query-scss/issues"
+  },
+  "homepage": "https://github.com/Dan503/container-query-scss#readme",
+  "dependencies": {
+    "mq-scss": "^1.2.4"
+  }
+}
