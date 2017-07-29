@@ -1,0 +1,10 @@
+
+@mixin ql($queries) {
+	@each $element, $query in $queries {
+		#{$element} & {
+			@include mq($query) {
+				@content;
+			}
+		}
+	}
+}
