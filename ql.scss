@@ -3,10 +3,12 @@
 
 $warning_triggered: false;
 
-@mixin ql($queries, $isInside, $debug) {
+@mixin ql($queries, $isInside:true, $debug:false) {
 	@if (not $warning_triggered){
 		@warn '"ql" is deprecated in favour of "mql"';
 		$warning_triggered: true;
 	}
-	@include mql($queries, $isInside, $debug);
+	@include mql($queries, $isInside:$isInside, $debug:$debug){
+		@content;
+	};
 }
