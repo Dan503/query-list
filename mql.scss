@@ -5,14 +5,20 @@
 
 		@if ($isInside) {
 			#{$element} & {
-				@include mq($query, $debug) {
+				@if ($debug){
+					@debug "selector:" #{&};
+				}
+				@include mq($query, $debug: $debug) {
 					@content;
 				}
 			}
 
 		} @else {
 			#{$element} {
-				@include mq($query, $debug) {
+				@if ($debug){
+					@debug "selector:" #{&};
+				}
+				@include mq($query, $debug: $debug) {
 					@content;
 				}
 			}
