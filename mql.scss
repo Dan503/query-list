@@ -1,0 +1,21 @@
+
+@mixin mql($queries, $isInside: true) {
+	@each $element, $query in $queries {
+		$selector: if($isInside, #{$element} &, $element);
+
+		@if ($isInside) {
+			#{$element} & {
+				@include mq($query) {
+					@content;
+				}
+			}
+
+		} @else {
+			#{$element} {
+				@include mq($query) {
+					@content;
+				}
+			}
+		}
+	}
+}
