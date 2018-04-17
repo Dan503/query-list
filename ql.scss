@@ -1,10 +1,14 @@
 
-@mixin ql($queries) {
-	@each $element, $query in $queries {
-		#{$element} & {
-			@include mq($query) {
-				@content;
-			}
-		}
+@import './mql.scss';
+
+$warning_triggered: false;
+
+@mixin ql($queries, $isInside:true, $debug:false) {
+	@if (not $warning_triggered){
+		@warn '"ql" is deprecated in favour of "mql"';
+		$warning_triggered: true;
 	}
+	@include mql($queries, $isInside:$isInside, $debug:$debug){
+		@content;
+	};
 }

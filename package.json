@@ -1,7 +1,7 @@
 {
   "name": "query-list",
-  "version": "1.0.0",
-  "description": "A Sass mixin powered by mq-scss that is a work around for the lack of container queries in css",
+  "version": "2.0.0",
+  "description": "A Sass mixin that is a work around for the lack of container queries in css",
   "main": "ql.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/Dan503/query-list#readme",
   "dependencies": {
-    "mq-scss": "^1.2.4"
+    "mq-scss": "latest"
   }
 }
